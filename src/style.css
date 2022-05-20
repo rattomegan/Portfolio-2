@@ -1,5 +1,5 @@
 :root {
-  --main-color: blue
+  --main-color: rgb(43, 43, 198);
 }
 
 * {
@@ -10,22 +10,27 @@
 
 html {
   font-size: 62.5%;
+  color: rgb(43, 43, 198);
 }
 
 body {
   font-family: Helvetica, sans-serif;
-  margin: 0 1.6rem;
   line-height: 1;
   font-weight: 400;
   color: var(--main-color);
+  margin: 0 2rem;
+}
+
+.body-container {
+  margin: 0 auto;
+  max-width: 140rem;
   border-left: 2px solid var(--main-color);
   border-right: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color)
 }
 
 .header {
   font-size: 2.6rem;
-  max-width: 140rem;
-  /* margin: 0 1.6rem; */
   border-bottom: 2px solid var(--main-color);
 }
 
@@ -42,11 +47,41 @@ body {
 .main-nav-link:visited {
   text-decoration: none;
   color: var(--main-color);
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  text-decoration: underline;
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.about-section {
+  margin: 3rem;
+  max-width: 80rem;
+}
+
+.about-text {
+  font-size: 1.8rem;
+  letter-spacing: .12rem;
+  line-height: 1.2;
+  animation: letterspacing 2s ease
+}
+
+@keyframes letterspacing {
+  0% {
+    letter-spacing: 1rem;
+  }
+  /* 30% {
+    letter-spacing: 1rem;
+  } */
+  100% {
+    letter-spacing: .15rem;
+  }
+}
