@@ -24,9 +24,10 @@ body {
 .body-container {
   margin: 0 auto;
   max-width: 120rem;
-  border-left: 2px solid var(--main-color);
+  /* border-left: 2px solid var(--main-color);
   border-right: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color)
+  border-bottom: 2px solid var(--main-color); */
+  border: 2px solid var(--main-color);
 }
 
 .header {
@@ -93,41 +94,70 @@ body {
   margin-top: 1.8rem;
 }
 
-.details summary{
+.details {
+  margin-bottom: 1rem;
+}
+
+.details summary {
   font-size: 2rem;
   text-transform: uppercase;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
 }
+
 .details-list {
   list-style: none;
   font-size: 1.8rem;
-  margin-top: 1.2rem;
-  
+  margin: 1.2rem 0;
 }
 
-.career-container {
-  padding: 1.4rem;
+.details-list-item {
+  font-size: 1.6rem;
+  padding: 0.8rem;
   border-top: 1px solid var(--main-color);
 }
 
-.career-summary-container {
+.career-container {
+  padding: 0.4rem; /* was 1.2rem */
   display: flex;
-  gap: 2rem;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .career-date {
   font-size: 1.4rem;
-  width: 16rem;
-  text-align: right;
+  min-width: 16rem;
 }
+
 .career-company {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: .2rem;
+  
 }
+
 .career-title {
-  font-size: 1.5rem;;
+  font-size: 1.3rem;
+  margin: .3rem 0;
 }
+
+.interest-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-heading {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 0.2rem 0;
+  width: 16rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: flex-start;
+  /* gap: 1.2rem; */
+  font-size: 1.4rem;
+}
+
 
 
 
