@@ -64,18 +64,24 @@ body {
 }
 
 .about-section,
-.work-section {
+.work-section,
+.contact-section {
   margin: 3rem;
-  /* max-width: 80rem; */
-  /* height: 90vh; */
+}
+
+.about-section {
+  max-width: 80rem;
+  /* height: 60rem; */
+  margin-top: 9rem;
 }
 
 
 .about-text {
   font-size: 2rem;
-  /* letter-spacing: .12rem; */
-  /* line-height: 1.2; */
-  /* animation: letterspacing 2s ease */
+  margin-bottom: 7rem;
+  line-height: 1.2;
+  height: 20rem;
+  animation: letterspacing 2s ease
 }
 
 @keyframes letterspacing {
@@ -161,7 +167,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem 1.8rem;
-
+  /* margin: 8rem 0; */
 }
 
 .project-card {
@@ -236,6 +242,29 @@ body {
   flex-grow: 1;
 }
 
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.contact-link:link,
+.contact-link:visited {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 2.6rem;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  color: var(--main-color);
+  text-decoration: underline;
+  font-size: 2.6rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  margin: 4rem 0 0 0;
+}
 
 /* ---------- GENERAL STYLES ---------- */
 .division {
