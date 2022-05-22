@@ -24,64 +24,49 @@ body {
 .body-container {
   margin: 0 auto;
   max-width: 100rem;
-  /* border-left: 2px solid var(--main-color);
+  border-left: 2px solid var(--main-color);
   border-right: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color); */
-  border: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  /* border: 2px solid var(--main-color); */
 }
 
 .header {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   border-bottom: 2px solid var(--main-color);
-}
-
-.main-nav-list {
-  list-style: none;
+  padding: 1.2rem;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem;
+  flex-wrap: wrap;
+
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
-  text-decoration: none;
-  color: var(--main-color);
-  transition: all 0.2s;
-}
-
-.main-nav-link:hover,
-.main-nav-link:active {
-  border-top: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color);
+.header h1 {
+ font-weight: 400;
+ text-transform: uppercase;
+ margin-bottom: 1.2rem;
 }
 
 .heading-primary {
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: 500;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
-.about-section,
+.contact-text {
+  /* min-width: 40rem; */
+  margin-bottom: 1.2rem;
+}
+
+.details-section,
 .work-section,
 .contact-section {
-  margin: 3rem;
+  margin: 2rem 2rem 1rem 2rem;
 }
-
-.about-section {
-  max-width: 80rem;
-  /* height: 60rem; */
-  margin-top: 9rem;
-}
-
 
 .about-text {
-  font-size: 2rem;
-  margin-bottom: 7rem;
+  font-size: 1.8rem;
   line-height: 1.2;
-  height: 20rem;
-  animation: letterspacing 2s ease
+  /* max-width: 60rem; */
+  /* animation: letterspacing 2s ease */
 }
 
 @keyframes letterspacing {
@@ -96,28 +81,60 @@ body {
   }
 }
 
-.about-details {
-  margin-top: 1.8rem;
+.contact-links {
+  display: flex;
+  gap: 1.2rem;
+}
+/* 92 180 227 */
+
+.button-link:link,
+.button-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  /* background-color: rgb(253, 253, 174); */
+  border: 2px solid var(--main-color);
+  /* border-radius: 1px; */
+  padding: 0.6rem 1.2rem;
+  color: var(--main-color);
+  font-size: 1.6rem;
+  transition: all 0.3s;
 }
 
-.details {
-  margin-bottom: 1rem;
+.button-link:hover,
+.button-link:active {
+  color: var(--main-color);
+  transform: translateY(-3px);
+  box-shadow: 3px 2px 0 var(--main-color);
 }
 
+
+.button-1 {
+  background-color: #edf2ff;
+}
+
+.button-2 {
+  background-color: #fff9db;
+}
+
+.button-3 {
+  background-color: #ffd8a8;
+}
+
+
+/* ------------- DETAILS ------------------- */
 .details summary {
   font-size: 2rem;
   text-transform: uppercase;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .details-list {
   list-style: none;
   font-size: 1.8rem;
-  margin: 1.2rem 0;
+  /* margin: 1.2rem 0; */
 }
 
 .details-list-item {
-  font-size: 1.6rem;
   padding: 0.8rem;
   border-top: 1px solid var(--main-color);
 }
@@ -136,7 +153,6 @@ body {
 .career-company {
   font-size: 1.6rem;
   margin-bottom: .2rem;
-  
 }
 
 .career-title {
@@ -148,6 +164,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+}
+
+.interest-list > .details-list-item {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.8rem;
 }
 
 .skills-heading {
@@ -163,11 +185,13 @@ body {
   font-size: 1.4rem;
 }
 
+
+/* --------------- PROJECTS ------------------ */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem 1.8rem;
-  /* margin: 8rem 0; */
+  gap: 3rem 2rem;
+  margin-bottom: 10rem;
 }
 
 .project-card {
@@ -236,39 +260,21 @@ body {
 
 .project-img {
   width: 100%;
+
 }
 
 .project-description {
   flex-grow: 1;
 }
 
-.contact-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-.contact-link:link,
-.contact-link:visited {
-  color: var(--main-color);
-  text-decoration: none;
-  font-size: 2.6rem;
-}
-
-.contact-link:hover,
-.contact-link:active {
-  color: var(--main-color);
-  text-decoration: underline;
-  font-size: 2.6rem;
-}
-
 .copyright {
   font-size: 1.2rem;
-  margin: 4rem 0 0 0;
+  margin: 2rem
 }
 
 /* ---------- GENERAL STYLES ---------- */
 .division {
-  margin: 6rem 0;
+  /* margin: 1rem 0; */
   border-top: 2px solid var(--main-color);
 
 }
