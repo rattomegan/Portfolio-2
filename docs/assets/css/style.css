@@ -113,9 +113,10 @@ body {
   margin-bottom: 0.8rem;
   cursor: pointer;
 }
-/* summary:focus {
-  outline: 2px solid blue;
-} */
+summary:focus-visible {
+  outline: 4px solid #f06261;
+  outline-offset: 2px;
+}
 .details-list {
   list-style: none;
   font-size: 1.8rem;
