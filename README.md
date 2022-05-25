@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 Portfolio showcasing projects built with HTML and CSS only.
 
